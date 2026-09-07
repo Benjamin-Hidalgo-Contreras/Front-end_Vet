@@ -1,0 +1,73 @@
+
+.menu
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px; /*agrega separacion entre las opciones del menu*/
+    list-style: none;
+}
+
+#img_logo
+{
+    width: 100px;
+    height: auto;
+}
+
+.img_contenedor
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    background-image: linear-gradient(rgba(8, 59, 136, 0.6), rgba(8, 59, 136, 0.6));
+
+    background-size: cover;
+    background-position: center;  
+    background-repeat: no-repeat; 
+    
+    overflow: hidden;
+}
+
+#img_titulo
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#titulo_principal
+{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    transform: translateY(600%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(8, 59, 136, 0.6);  
+    font-size: 4rem;
+}
+
+ #id_suscursales
+{
+    text-align: center;
+}
+
+#sucursal
+{
+    position: relative;
+    left: 5%;
+}
+
+#sucursal strong
+{
+    font-size: 1.2rem;
+}
+
+
+#contenedro_info_vet strong
+{
+    font-size: 1.2rem;
+}
