@@ -1,0 +1,283 @@
+header 
+{
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5%;             
+    padding-right: 0;           /* Elimina el espacio a la derecha */
+}
+
+#img_logo
+{
+    width: 100px;
+    height: auto;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    margin: 0;   
+    padding: 10px 30px;
+    
+    background-color: #00a8b5;  /* Turquesa del afiche */
+    
+    /* Redondea solo las esquinas izquierdas para pegar la barra al borde derecho */
+    border-radius: 50px 0 0 50px; 
+    box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu a 
+{
+    text-decoration: none;          
+    color: #ffffff;             
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover 
+{
+    background-color: #007f88;  /* Azul marino en hover */
+    color: #ffffff;
+}
+
+/*titulo*/
+.img_contenedor
+{
+   position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: 
+        linear-gradient(rgba(8, 59, 136, 0.6), rgba(8, 59, 136, 0.6)), 
+        url('../img/istockphoto-2159501928-612x612.jpg'); /* Se agrega ../ para salir de la carpeta css */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#img_titulo
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#titulo_principal
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%); /* Centra el titulo dentro de la imagen */
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 4rem;
+    color: white; 
+}
+
+
+/*aca iniciaremos la edicion css del main*/
+main 
+{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+#contenedro_info_vet h2, /* Espaciado de titulos */
+#id_suscursales 
+{
+    color: #083b88; /* Azul acorde al banner */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#id_suscursales {
+    text-align: center;
+}
+
+#contenedro_info_vet ul,
+#sucursal ul {
+    line-height: 1.6;
+    padding-left: 20px;
+}
+
+#contenedro_info_vet li,
+#sucursal li {
+    margin-bottom: 10px;
+}
+
+#sucursal 
+{
+    width: 100%; /* Asegura que el contenedor de la sucursal ocupe todo el ancho disponible */
+}
+
+#mapa_sucursal /* Forzar ancho completo al contenedor del mapa */
+{
+    margin-top: 15px;
+    width: 100% !important;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Forzar que el iframe ocupe todo el ancho de su contenedor */
+#mapa_sucursal iframe 
+{
+    display: block;
+    width: 100% !important;
+    min-width: 100%;
+}
+
+/* edicion vacunas */
+#seccion_servicios 
+{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#seccion_servicios .titulo-servicios 
+{
+    color: #083b88;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#tarjeta_vacunas /* Tarjeta individual del servicio */ 
+{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.icono-servicio 
+{
+    font-size: 2.5rem;
+    color: #083b88;
+    margin-bottom: 1rem;
+}
+
+.titulo-tarjeta 
+{
+    color: #083b88;
+    margin-bottom: 0.5rem;
+}
+
+.texto-servicio 
+{
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.btn-servicio 
+{
+    display: inline-block;
+    background-color: #083b88;
+    color: white;
+    font-weight: bold;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-servicio:hover 
+{
+    background-color: #052659;
+    color: white;
+}
+
+
+/* aca aremos la edicion de estilo del footer*/
+footer 
+{
+    background-color: #f0f4f8;
+    padding: 15px 5%;
+    margin-top: 40px;
+}
+
+#barra_footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Bloques principales */
+#item_footer1,
+#item_footer2,
+#item_footer3 
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* Estilo base para los tres íconos */
+#icono_whatsapp,
+#icono_ubicacion,
+#icono_instagram {
+    font-size: 1.2rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Colores de cada icono */
+#icono_whatsapp, 
+#icono_ubicacion 
+{ 
+    background-color: #00b0b9; 
+}
+
+#icono_instagram { 
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+}
+
+/* Dirección */
+#contenedor_direccion {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+#contenedor_direccion small {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Líneas separadoras */
+#separador_footer1,
+#separador_footer2
+{
+    width: 1px;
+    height: 100px;
+    background-color: #cccccc;
+}
+

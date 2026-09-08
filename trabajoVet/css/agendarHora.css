@@ -1,0 +1,50 @@
+header 
+{
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5%;             
+    padding-right: 0;           /* Elimina el espacio a la derecha */
+}
+
+#img_logo
+{
+    width: 100px;
+    height: auto;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    margin: 0;   
+    padding: 10px 30px;
+    
+    background-color: #00a8b5;  /* Turquesa del afiche */
+    
+    /* Redondea solo las esquinas izquierdas para pegar la barra al borde derecho */
+    border-radius: 50px 0 0 50px; 
+    box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu a 
+{
+    text-decoration: none;          
+    color: #ffffff;             
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover 
+{
+    background-color: #007f88;  /* Azul marino en hover */
+    color: #ffffff;
+}

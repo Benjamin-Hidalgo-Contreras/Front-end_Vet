@@ -1,11 +1,9 @@
-
-.menu
+header 
 {
-    display: flex;
-    justify-content: flex-end;
+    display: flex;                  
+    justify-content: space-between; 
     align-items: center;
-    gap: 20px; /*agrega separacion entre las opciones del menu*/
-    list-style: none;
+    padding: 10px 5%;              
 }
 
 #img_logo
@@ -14,18 +12,44 @@
     height: auto;
 }
 
+.menu
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;   /* Elimina margenes por defecto de la lista */
+    padding: 0;
+}
+
+.menu a 
+{
+    text-decoration: none;          /* Quita el subrayado azul por defecto */
+    color: #083b88;                 /* Azul que combina con tu banner */
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #083b88;      /* Fondo azul al pasar el cursor */
+    color: white;                   /* Texto blanco */
+}
+
 .img_contenedor
 {
-    position: relative;
+   position: relative;
     width: 100%;
-    height: auto;
-
-    background-image: linear-gradient(rgba(8, 59, 136, 0.6), rgba(8, 59, 136, 0.6));
-
+    height: 400px;
+    background-image: 
+        linear-gradient(rgba(8, 59, 136, 0.6), rgba(8, 59, 136, 0.6)), 
+        url('../img/istockphoto-2159501928-612x612.jpg'); /* Se agrega ../ para salir de la carpeta css */
     background-size: cover;
-    background-position: center;  
-    background-repeat: no-repeat; 
-    
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -39,35 +63,128 @@
 #titulo_principal
 {
     position: absolute;
-    top: 50px;
+    top: 50%;
     left: 0;
     width: 100%;
-    transform: translateY(600%);
+    transform: translateY(-50%); /* Centra el titulo dentro de la imagen */
     text-align: center;
     margin: 0;
-    padding: 0;
-    background-color: rgba(8, 59, 136, 0.6);  
+    padding: 10px 0;
     font-size: 4rem;
+    color: white; 
 }
 
- #id_suscursales
+
+
+/*aca iniciaremos la edicion css del main*/
+main 
 {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Espaciado de titulos */
+#contenedro_info_vet h2,
+#id_suscursales 
+{
+    color: #083b88; /* Azul acorde al banner */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#id_suscursales {
     text-align: center;
 }
 
-#sucursal
-{
-    position: relative;
-    left: 5%;
+#contenedro_info_vet ul,
+#sucursal ul {
+    line-height: 1.6;
+    padding-left: 20px;
 }
 
-#sucursal strong
-{
-    font-size: 1.2rem;
+#contenedro_info_vet li,
+#sucursal li {
+    margin-bottom: 10px;
 }
 
 
-#contenedro_info_vet strong
+
+/* aca aremos la edicion de estilo del footer*/
+
+footer 
 {
+    background-color: #f0f4f8;
+    padding: 15px 5%;
+    margin-top: 40px;
+}
+
+#barra_footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Bloques principales */
+#item_footer1,
+#item_footer2,
+#item_footer3 
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* Estilo base para los tres íconos */
+#icono_whatsapp,
+#icono_ubicacion,
+#icono_instagram {
     font-size: 1.2rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Colores de cada ícono */
+#icono_whatsapp, 
+#icono_ubicacion 
+{ 
+    background-color: #00b0b9; 
+}
+
+#icono_instagram { 
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+}
+
+/* Dirección */
+#contenedor_direccion {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+#contenedor_direccion small {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* Líneas separadoras */
+#separador_footer1,
+#separador_footer2
+{
+    width: 1px;
+    height: 30px;
+    background-color: #cccccc;
 }
