@@ -3,69 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/style-index.css">
+    
+    <!--link libreria de iconos gratuitas-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
+    <!--encabezado con logo y menu(navegador)-->
     <header>
-        <img id="img_logo" src="img/veterinaria_luluvet-20260906-0001.png" alt="logo">
+        <img id="img_logo" src="./img/veterinaria_luluvet-20260906-0001.png" alt="logo">
         <nav>
             <ul class="menu">
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./sVacunacion.html">Servicio de Vacunación</a></li>
+                <li><a href="./agendarHoras.html">Agendar hora</a></li>
             </ul>
-        </nav>
-
-        <div class="img_contenedor">
-            <img id="img_titulo" src="img/istockphoto-2159501928-612x612.jpg" alt="">
-            <h1 id="titulo_principal">Lulu vet</h1>
-        </div>
-        
-        
+        </nav> 
     </header>
 
+    <div class="img_contenedor">
+        <h1 id="titulo_principal">Lulu vet</h1>
+    </div>   
+
+    <!--contenido principal-->
     <main>
-        <nav id="contenedro_info_vet">
-            <h2>sobre nosotros: </h2>
+        <div id="contenedro_info_vet">
+            <h2>Sobre nosotros: </h2>
 
             <ul>
-                <li><strong>año de creacion:</strong> 2000 todos...</li>
+
+                <li><strong>año de creacion:</strong>Fundada en el año 2004</li>
                 <br>
-                <li><strong>fundadores:</strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                <li><strong>fundadores:</strong>Equipo médico veterinario familiar liderado por el Dr. Eduardo Guajardo</li>
                 <br>
-                <li><strong>Reseña:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Praesentium est, ab, tempore excepturi, optio molestiae pariatur ullam sequi corrupti mollitia non. Impedit esse mollitia corporis. 
-                    Commodi harum voluptas cumque eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nihil est fugit optio nobis autem dolorem natus repudiandae consectetur, 
-                    veritatis at totam adipisci officia! Saepe et atque ex voluptatum assumenda?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta corporis nulla voluptate accusantium enim quasi! Cum, nihil, 
-                    facere laudantium nam aliquam est illum id distinctio nesciunt nostrum voluptas recusandae facilis? </li>
+                <li><strong>Reseña:</strong>Lulu'Vet nació en Maipú como un proyecto familiar dedicado a brindar un cuidado médico integral y amoroso para las mascotas. 
+                    Inspirados en la memoria de su perrita Lulú, nuestro centro ofrece consultas médicas, planes de vacunación, procedimientos quirúrgicos, 
+                    odontología y ecografías con un trato cálido, preventivo y personalizado para cada paciente
+                </li>
+
             </ul>
 
-        </nav>
+        </div>
 
-        <br>
+        <h2 id="id_suscursales">Ubicación y sucursal</h2>
 
-        <br>
-
-        <h2 id="id_suscursales">ubicacion y sucursales</h2>
-
-        <nav id="sucursal">
-            <p>Casa Matriz - Maipu:</p>
+        <section id="sucursal">
+            <p><strong>Casa Matriz - Maipú:</strong></p>
 
             <ul>
-                <li><strong>Direccion:</strong>Pasaje Liberia 2762 con Libertador de Chile, Villa El Sol. Maipu, Santiago, Chile 9250000</li>
+                <li><strong>Dirección:</strong> Pasaje Liberia 2762 con Libertador de Chile, Villa El Sol. Maipu, Santiago, Chile 9250000</li>
+                <li><strong>Horario:</strong> Lunes a domingo.</li>
             </ul>
-            <ul><strong>Horario:</strong> Lunes a domingo.</ul>
-        </nav>
+
+            <!--mapa de Google Maps -->
+            <div id="mapa_sucursal">
+
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13307.67410957125!2d-70.80387993773176!3d-33.50349677389337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c2b72f1bbd11%3A0x5bb07315e846c713!2sLulu'Vet!5e0!3m2!1ses-419!2scl!4v1788808907821!5m2!1ses-419!2scl" 
+                    width="100%" 
+                    height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+        </section>
 
     </main>
 
     <br>
+    <hr>
+
+    <!--tarjeta de productos-->
+    <section id="productos_destacados" class="container my-5">
+
+        <h2 class="text-center mb-4 fw-bold" style="color: #083b88;">Productos destacados</h2>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <!-- Tarjeta 1: Antiparasitarios -->
+            <div class="col">
+
+                <div class="card h-100 shadow-sm border-0">
+
+                    <div class="d-flex align-items-center justify-content-center bg-light p-3" style="height: 220px;">
+                        <img src="./img/img-productos/anti-parasitario.jpg" class="card-img-top img-fluid mh-100" alt="Antiparasitarios Bravecto" style="object-fit: contain;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5 fw-bold" style="color: #083b88;">1. Antiparasitarios</h3>
+                        <p class="card-text text-secondary">Protección completa interna y externa para cuidar la salud de tu mascota.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Tarjeta 2: Churu -->
+            <div class="col">
+
+                <div class="card h-100 shadow-sm border-0">
+
+                    <div class="d-flex align-items-center justify-content-center bg-light p-3" style="height: 220px;">
+                        <img src="./img/img-productos/churu.jpg" class="card-img-top img-fluid mh-100" alt="Snacks Churu" style="object-fit: contain;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5 fw-bold" style="color: #083b88;">2. Snacks Churu</h3>
+                        <p class="card-text text-secondary">El premio cremoso favorito para gatos de todas las edades.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Tarjeta 3: Comida en lata -->
+            <div class="col">
+
+                <div class="card h-100 shadow-sm border-0">
+
+                    <div class="d-flex align-items-center justify-content-center bg-light p-3" style="height: 220px;">
+                        <img src="./img/img-productos/comida-lata.jpg" class="card-img-top img-fluid mh-100" alt="Comida en lata Whiskas" style="object-fit: contain;">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title h5 fw-bold" style="color: #083b88;">3. Comida en Lata</h3>
+                        <p class="card-text text-secondary">Alimento húmedo de alta calidad para una nutrición balanceada y sabrosa.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <br>
+    
+    <!--vacunas-->
+    <section id="seccion_servicios" class="container text-center">
+
+        <h2 class="titulo-servicios">Nuestros Servicios</h2>
+        
+        <div id="tarjeta_vacunas" class="tarjeta-servicio">
+            <i class="fa-solid fa-syringe icono-servicio"></i>
+            <h3 class="titulo-tarjeta">Servicio de Vacunación</h3>
+            <p class="texto-servicio">Contamos con esquemas de vacunación completos para perros y gatos. Protege a tu mascota contra las principales enfermedades con la supervisión de nuestros profesionales.</p>
+            <a href="./sVacunacion.html" class="btn-servicio">Ver más información</a>
+        </div>
+
+    </section>
+
     <br>
 
+    <!--pie de pagina-->
     <footer>
-        <p>aca colocamo el contacto :v</p>
+
+        <div id="barra_footer">
+            <!--WhatsApp-->
+            <a href="https://wa.me/56942690778" target="_blank" id="item_footer1">
+                <i class="fa-brands fa-whatsapp" id="icono_whatsapp"></i>
+                <span>+56 9 4269 0778</span>
+            </a>
+
+            <div id="separador_footer1"></div>
+
+            <!--Ubicacion-->
+            <div id="item_footer2">
+
+                <i class="fa-solid fa-location-dot" id="icono_ubicacion"></i>
+
+                <div id="contenedor_direccion">
+                    <span>PASAJE LIBERIA 2762</span>
+                    <small>MAIPU</small>
+                </div>
+
+            </div>
+
+            <div id="separador_footer2"></div>
+
+            <!--Instagram-->
+            <a href="https://instagram.com/veterinaria_luluvet" target="_blank" id="item_footer3">
+
+                <i class="fa-brands fa-instagram" id="icono_instagram"></i>
+                <span>veterinaria_luluvet</span>
+
+            </a>
+
+        </div>
+
     </footer>
+
+    <!--link javaScript de boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
