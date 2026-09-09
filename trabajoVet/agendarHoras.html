@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendar Hora</title>
     <link rel="stylesheet" href="./css/agendarHora.css">
+
+    <!--link libreria de iconos gratuitos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
 
+    <!--encabezado con logo y menu(navegador)-->
     <header>
         <img id="img_logo" src="./img/veterinaria_luluvet-20260906-0001.png" alt="logo">
         <nav>
@@ -17,8 +22,124 @@
                 <li><a href="./sVacunacion.html">Servicio de Vacunación</a></li>
                 <li><a href="./agendarHoras.html">Agendar hora</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
+
+    <main>
+        <h2>Agendar hora de atencion</h2>
+
+        <div id="contenedor_form">
+
+            <form id="form_agendamiento">
+                <fieldset>
+                    <legend>Datos de la cita</legend>
+
+                    <div class="datos_cliente">
+                        <!-- nombre -->
+                        <label for="campo_nombre">Nombre completo</label>
+                        <input type="text" name="campo_nombre" id="campo_nombre" placeholder="Juan López">
+                        <span class="mensaje_error" id="mensaje_nombre"></span>
+                        
+                        <br>
+
+                        <!-- run -->
+                        <label for="campo_run">Run</label>
+                        <input type="text" name="campo_run" id="campo_run" placeholder="12345678-9">
+                        <span class="mensaje_error" id="mensaje_run"></span>
+
+                        <br>
+
+                        <!-- telefono contacto -->
+                        <label for="campo_telefono">Teléfono de contacto</label>
+                        <input type="text" name="campo_telefono" id="campo_telefono" placeholder="+56912345678">
+                        <span class="mensaje_error" id="mensaje_telefono"></span>
+                        
+                        <br>
+
+                        <!-- correo electronico -->
+                        <label for="campo_email">Correo electrónico</label>
+                        <input type="text" name="campo_email" id="campo_email" placeholder="ejemplo@correo.com">
+                        <span class="mensaje_error" id="mensaje_email"></span>
+                        
+                        <br>
+
+                        <!-- direccion -->
+                        <label for="campo_direccion">Direccion</label>
+                        <input type="text" name="campo_direccion" id="campo_direccion" placeholder="Pasaje 1 casa 1234, Maipú">
+                        <span class="mensaje_error" id="mensaje_direccion"></span>
+                    </div>
+
+                    <br>
+
+                    <div class="datos_cita">
+                        <!-- fecha atencion -->
+                        <label for="campo_fecha">Fecha de atención</label>
+                        <input type="date" name="campo_fecha" id="campo_fecha">
+                        <span class="mensaje_error" id="mensaje_fecha"></span>
+
+                        <br>
+
+                        <!-- hora atencion -->
+                        <label for="campo_hora">Hora de atención</label>
+                        <input type="time" name="campo_hora" id="campo_hora">
+                        <span class="mensaje_error" id="mensaje_hora"></span>
+                    </div>
+
+                    <br>
+
+                    <!-- botones -->
+                    <div class="contenedor_botones">
+                        <button type="reset" id="btn_limpiar">Limpiar</button>
+                        <button type="button" id="btn_procesar" onclick="procesar()">Procesar</button>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+
+    </main>
+
+    <!--pie de pagina-->
+    <footer>
+
+        <div id="barra_footer">
+            <!--WhatsApp-->
+            <a href="https://wa.me/56942690778" target="_blank" id="item_footer1">
+                <i class="fa-brands fa-whatsapp" id="icono_whatsapp"></i>
+                <span>+56 9 4269 0778</span>
+            </a>
+
+            <div id="separador_footer1"></div>
+
+            <!--Ubicacion-->
+            <div id="item_footer2">
+
+                <i class="fa-solid fa-location-dot" id="icono_ubicacion"></i>
+
+                <div id="contenedor_direccion">
+                    <span>PASAJE LIBERIA 2762</span>
+                    <small>MAIPU</small>
+                </div>
+
+            </div>
+
+            <div id="separador_footer2"></div>
+
+            <!--Instagram-->
+            <a href="https://instagram.com/veterinaria_luluvet" target="_blank" id="item_footer3">
+
+                <i class="fa-brands fa-instagram" id="icono_instagram"></i>
+                <span>veterinaria_luluvet</span>
+
+            </a>
+
+        </div>
+
+    </footer>
     
+    <!-- js agendar hora -->
+    <script src="./js/agendarHoras.js"></script>
+
 </body>
 </html>

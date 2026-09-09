@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="./css/productos.css">
+
+    <!--link libreria de iconos gratuitos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
+   <!--encabezado con logo y menu(navegador)-->
     <header>
         <img id="img_logo" src="./img/veterinaria_luluvet-20260906-0001.png" alt="logo">
         <nav>
@@ -16,7 +21,219 @@
                 <li><a href="./sVacunacion.html">Servicio de Vacunación</a></li>
                 <li><a href="./agendarHoras.html">Agendar hora</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
+
+    <!--productos destacados-->
+    <section id="productos_destacados" class="contenedor_productos_seccion">
+
+        <h2>Productos destacados</h2>
+        
+        <div class="grilla_productos">         
+            <!--A ntiparasitarios -->
+            <article class="columna_producto">
+                <div class="tarjeta_producto">
+                    <div class="contenedor_imagen_producto">
+                        <img src="./img/img-productos/anti-parasitario.jpg" alt="Antiparasitarios Bravecto">
+                    </div>
+                    <div class="cuerpo_tarjeta">
+                        <h3 class="titulo_producto">1. Antiparasitarios</h3>
+                        <p class="descripcion_producto">Protección completa interna y externa para cuidar la salud de tu mascota.</p>
+                        
+                        <!-- Precio -->
+                        <div class="precio_producto">$15,990</div>
+                        
+                        <!-- boton agregar al carrito -->
+                        <button type="button" class="btn_agregar_carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- churu -->
+            <article class="columna_producto">
+                <div class="tarjeta_producto">
+                    <div class="contenedor_imagen_producto">
+                        <img src="./img/img-productos/churu.jpg" alt="Snacks Churu">
+                    </div>
+                    <div class="cuerpo_tarjeta">
+                        <h3 class="titulo_producto">2. Snacks Churu</h3>
+                        <p class="descripcion_producto">El premio cremoso favorito para gatos de todas las edades.</p>
+                        
+                        <!-- precio -->
+                        <div class="precio_producto">$2,590</div>
+                        
+                        <!-- boton agregar al carrito -->
+                        <button type="button" class="btn_agregar_carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- comida en Lata -->
+            <article class="columna_producto">
+                <div class="tarjeta_producto">
+                    <div class="contenedor_imagen_producto">
+                        <img src="./img/img-productos/comida-lata.jpg" alt="Comida en lata Whiskas">
+                    </div>
+                    <div class="cuerpo_tarjeta">
+                        <h3 class="titulo_producto">3. Comida en Lata</h3>
+                        <p class="descripcion_producto">Alimento húmedo de alta calidad para una nutrición balanceada y sabrosa.</p>
+                        
+                        <!-- precio -->
+                        <div class="precio_producto">$2,190</div>
+                        
+                        <!-- boton agregar al carrito -->
+                        <button type="button" class="btn_agregar_carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <br>
+
+    <!--otros productos-->
+    <section id="todos_los_productos" class="contenedor_productos_seccion">
+
+        <h2>Todos los Productos</h2>
+        
+        <div class="grilla_productos">
+
+            <!-- churu de pollo -->
+            <article class="columna_producto">
+                <div class="tarjeta_producto">
+                    <div class="contenedor_imagen_producto">
+                        <img src="./img/img-productos/churu.jpg" alt="Snacks Churu sabor pollo">
+                    </div>
+
+                    <div class="cuerpo_tarjeta">
+                        <h3 class="titulo_producto">Snacks Churu sabor pollo</h3>
+                        <p class="descripcion_producto">El premio cremoso favorito para gatos de todas las edades sabor pollo.</p>
+                        <div class="precio_producto">$2,590</div>
+                        <button type="button" class="btn_agregar_carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- churu sabor pollo con carne -->
+            <article class="columna_producto">
+                <div class="tarjeta_producto">
+                    <div class="contenedor_imagen_producto">
+                        <img src="./img/img-productos/churu-pollo con carne.jpg" alt="Snacks Churu sabor pollo con carne">
+                    </div>
+
+                    <div class="cuerpo_tarjeta">
+                        <h3 class="titulo_producto">Snacks Churu sabor pollo con carne</h3>
+                        <p class="descripcion_producto">El premio cremoso favorito para gatos de todas las edades sabor pollo con carne</p>
+                        <div class="precio_producto">$2,590</div>
+                        <button type="button" class="btn_agregar_carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- churu sabor atun con carne -->
+            <article class="columna_producto">
+                <div class="tarjeta_producto">
+                    <div class="contenedor_imagen_producto">
+                        <img src="./img/img-productos/churu-atun-con-carne.jpg" alt="Snacks Churu sabor atun con carne">
+                    </div>
+
+                    <div class="cuerpo_tarjeta">
+                        <h3 class="titulo_producto">Snacks Churu sabor atún con carne</h3>
+                        <p class="descripcion_producto">El premio cremoso favorito para gatos de todas las edades sabor atún con carne</p>
+                        <div class="precio_producto">$2,590</div>
+                        <button type="button" class="btn_agregar_carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- latas vetlife gato renal -->
+            <article class="columna_producto">
+                <div class="tarjeta_producto">
+                    <div class="contenedor_imagen_producto">
+                        <!-- espacio reservado para la imagen (img...)-->
+                         <img src="./img/img-productos/vet-life-feline-renal-humedo.jpg" alt="Latas vetlife gato renal">
+                    </div>
+                    <div class="cuerpo_tarjeta">
+                        <h3 class="titulo_producto">Latas vetlife gato renal</h3>
+                        <p class="descripcion_producto">Latas vetlife gato renal, convalescence, estruvita, gastrointestinal.</p>
+                        <div class="precio_producto">$2,490</div>
+                        <button type="button" class="btn_agregar_carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- correa y arnes para perro -->
+            <article class="columna_producto">
+                <div class="tarjeta_producto">
+                    <div class="contenedor_imagen_producto">
+                        <img src="./img/img-productos/producto-arnes.png" alt="">
+                    </div>
+                    <div class="cuerpo_tarjeta">
+                        <h3 class="titulo_producto">Correa Y Arnes</h3>
+                        <p class="descripcion_producto">Correa Y Arnes Para Perro 120cm*2cm.</p>
+                        <div class="precio_producto">$2,500</div>
+                        <button type="button" class="btn_agregar_carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- >N&D Prime -->
+            <article class="columna_producto">
+                <div class="tarjeta_producto">
+                    <div class="contenedor_imagen_producto">
+                        <img src="./img/img-productos/producto-nyd.png" alt="Nyd perros raza pequeña">
+                    </div>
+
+                    <div class="cuerpo_tarjeta">
+                        <h3 class="titulo_producto">N&D Prime Pollo y Granada (Raza Pequeña - 2.5 kg)</h3>
+                        <p class="descripcion_producto">alimento ultra premium libre de granos contiene un 98% de proteínas de alta calidad derivadas del pollo fresco.</p>
+                        <div class="precio_producto">$25,990</div>
+                        <button type="button" class="btn_agregar_carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!--pie de pagina-->
+    <footer>
+
+        <div id="barra_footer">
+            <!--WhatsApp-->
+            <a href="https://wa.me/56942690778" target="_blank" id="item_footer1">
+                <i class="fa-brands fa-whatsapp" id="icono_whatsapp"></i>
+                <span>+56 9 4269 0778</span>
+            </a>
+
+            <div id="separador_footer1"></div>
+
+            <!--Ubicacion-->
+            <div id="item_footer2">
+
+                <i class="fa-solid fa-location-dot" id="icono_ubicacion"></i>
+
+                <div id="contenedor_direccion">
+                    <span>PASAJE LIBERIA 2762</span>
+                    <small>MAIPU</small>
+                </div>
+
+            </div>
+
+            <div id="separador_footer2"></div>
+
+            <!--Instagram-->
+            <a href="https://instagram.com/veterinaria_luluvet" target="_blank" id="item_footer3">
+
+                <i class="fa-brands fa-instagram" id="icono_instagram"></i>
+                <span>veterinaria_luluvet</span>
+
+            </a>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>

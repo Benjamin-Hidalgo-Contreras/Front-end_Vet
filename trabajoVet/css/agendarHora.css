@@ -6,7 +6,7 @@ header
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 5%;             
-    padding-right: 0;           /* Elimina el espacio a la derecha */
+    padding-right: 0;  /*elimina el espacio a la derecha*/
 }
 
 #img_logo
@@ -25,9 +25,9 @@ header
     margin: 0;   
     padding: 10px 30px;
     
-    background-color: #00a8b5;  /* Turquesa del afiche */
+    background-color: #00a8b5;
     
-    /* Redondea solo las esquinas izquierdas para pegar la barra al borde derecho */
+    /*redondea solo las esquinas izquierdas para pegar la barra al borde derecho*/
     border-radius: 50px 0 0 50px; 
     box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -45,6 +45,369 @@ header
 
 .menu a:hover 
 {
-    background-color: #007f88;  /* Azul marino en hover */
+    background-color: #007f88;
     color: #ffffff;
 }
+
+/*===============================================================
+  ===============================================================*/
+
+/*carrito*/
+.item_carrito_menu 
+{
+    display: flex;
+    align-items: center;
+}
+
+.btn_carrito_menu 
+{
+    background-color: #ffff;
+    color: #083b88; /*azul corporativo*/
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn_carrito_menu:hover 
+{
+    background-color: #e2e1e1;
+    transform: scale(1.03);
+}
+
+/*modal y sobresposicion (MANTENER IGUAL)*/
+.modal_overlay 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_overlay.activo 
+{
+    display: flex;
+}
+
+.contenido_modal 
+{
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cabecera_modal 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.cabecera_modal h3 
+{
+    color: #083b88;
+    margin: 0;
+}
+
+.btn_cerrar 
+{
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.lista_productos_carrito 
+{
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.item_carrito 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 0.95rem;
+}
+
+.btn_eliminar_item 
+{
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pie_modal 
+{
+    border-top: 1px solid #e9ecef;
+    padding-top: 15px;
+}
+
+.total_contenedor 
+{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #083b88;
+    margin-bottom: 10px;
+}
+
+.btn_vaciar 
+{
+    /*!important fuerza al navegador tomar los cambios escrtitos*/
+    width: 100% !important;
+    background-color: #00a8b5 !important; 
+    color: #ffffff !important;            
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 6px !important;
+    font-weight: bold !important;
+    font-size: 0.95rem !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.btn_vaciar:hover 
+{
+    background-color: #007f88 !important; 
+}
+
+/*===============================================================
+  ===============================================================*/
+
+
+main h2 
+{
+    color: #083b88;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/*edicion de stilo del formulado*/
+#contenedor_form 
+{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset 
+{
+    border: 2px solid #00a8b5; /*turquesa corporativo*/
+    border-radius: 10px;
+    padding: 25px;
+}
+
+legend 
+{
+    width: auto;
+    padding: 0 10px;
+    color: #083b88; /*azul corporativo*/
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/*labeles e inputs*/
+.datos_cliente label,
+.datos_cita label {
+    display: block;
+    font-weight: 600;
+    color: #083b88;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    outline: none;
+    border-color: #00a8b5;
+    box-shadow: 0 0 5px rgba(0, 168, 181, 0.4);
+}
+
+/*mensaje de error*/
+.mensaje_error 
+{
+    display: block;
+    color: #d9534f; /*rojo de alerta*/
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 4px;
+    min-height: 18px; /*mantiene el espacio fijo para no desarmar el diseño*/
+}
+
+/*botones*/
+.contenedor_botones 
+{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#btn_limpiar,
+#btn_procesar 
+{
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn_limpiar 
+{
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+#btn_limpiar:hover 
+{
+    background-color: #5a6268;
+    color: #ffa33a;
+}
+
+#btn_procesar 
+{
+    background-color: #ffa33a; /* Naranja para llamar la atencion */
+    color: #ffffff;
+}
+
+#btn_procesar:hover 
+{
+    background-color: #e68a20;
+    color: #083b88;
+}
+
+/*===============================================================
+  ===============================================================*/
+
+/*aca aremos la edicion de estilo del footer*/
+footer 
+{
+    background-color: #f0f4f8;
+    padding: 15px 5%;
+    margin-top: 40px;
+}
+
+#barra_footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/*bloques principales*/
+#item_footer1,
+#item_footer2,
+#item_footer3 
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/*estilo base para los tres iconos*/
+#icono_whatsapp,
+#icono_ubicacion,
+#icono_instagram 
+{
+    font-size: 1.2rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/*colores de cada icono*/
+#icono_whatsapp, 
+#icono_ubicacion 
+{ 
+    background-color: #00b0b9; 
+}
+
+#icono_instagram 
+{ 
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+}
+
+/*direccion*/
+#contenedor_direccion 
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+#contenedor_direccion small
+{
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/*lineas separadoras*/
+#separador_footer1,
+#separador_footer2
+{
+    width: 1px;
+    height: 100px;
+    background-color: #cccccc;
+}
+
