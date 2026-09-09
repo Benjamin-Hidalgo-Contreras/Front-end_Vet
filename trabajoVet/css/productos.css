@@ -6,7 +6,7 @@ header
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 5%;             
-    padding-right: 0;           /* Elimina el espacio a la derecha */
+    padding-right: 0;   /*elimina el espacio a la derecha */
 }
 
 #img_logo
@@ -25,9 +25,9 @@ header
     margin: 0;   
     padding: 10px 30px;
     
-    background-color: #00a8b5;  /* Turquesa del afiche */
+    background-color: #00a8b5; 
     
-    /* Redondea solo las esquinas izquierdas para pegar la barra al borde derecho */
+    /*redondea solo las esquinas izquierdas para pegar la barra al borde derecho*/
     border-radius: 50px 0 0 50px; 
     box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -45,6 +45,205 @@ header
 
 .menu a:hover 
 {
-    background-color: #007f88;  /* Azul marino en hover */
+    background-color: #007f88; 
     color: #ffffff;
+}
+
+/*===============================================================
+  ===============================================================*/
+
+/*estilo productos*/
+.contenedor_productos_seccion 
+{
+    max-width: 1140px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.contenedor_productos_seccion h2 {
+    color: #083b88;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/*grilla(estructura de filas y columnas) responsiva*/
+.grilla_productos 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.tarjeta_producto 
+{
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta_producto:hover 
+{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/*espacio para las imagenes*/
+.contenedor_imagen_producto 
+{
+    background-color: #f8f9fa;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contenedor_imagen_producto img 
+{
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.cuerpo_tarjeta 
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.titulo_producto 
+{
+    color: #083b88;
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.descripcion_producto 
+{
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0 0 15px 0;
+}
+
+.precio_producto 
+{
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #083b88;
+    margin-top: auto;
+    margin-bottom: 12px;
+}
+
+.btn_agregar_carrito 
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #00a8b5;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_agregar_carrito:hover 
+{
+    background-color: #007f88;
+}
+
+
+/*aca aremos la edicion de estilo del footer*/
+footer 
+{
+    background-color: #f0f4f8;
+    padding: 15px 5%;
+    margin-top: 40px;
+}
+
+#barra_footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/*bloques principales*/
+#item_footer1,
+#item_footer2,
+#item_footer3 
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/*estilo base para los tres iconos*/
+#icono_whatsapp,
+#icono_ubicacion,
+#icono_instagram 
+{
+    font-size: 1.2rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/*colores de cada icono*/
+#icono_whatsapp, 
+#icono_ubicacion 
+{ 
+    background-color: #00b0b9; 
+}
+
+#icono_instagram 
+{ 
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+}
+
+/*direccion*/
+#contenedor_direccion 
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+#contenedor_direccion small
+{
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/*lineas separadoras*/
+#separador_footer1,
+#separador_footer2
+{
+    width: 1px;
+    height: 100px;
+    background-color: #cccccc;
 }

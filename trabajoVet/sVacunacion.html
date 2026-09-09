@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicio vacunación</title>
     <link rel="stylesheet" href="./css/sVacunacion.css">
+
+    <!--link libreria de iconos gratuitos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
 
+    <!--encabezado con logo y menu(navegador)-->
     <header>
         <img id="img_logo" src="./img/veterinaria_luluvet-20260906-0001.png" alt="logo">
         <nav>
@@ -17,8 +22,182 @@
                 <li><a href="./sVacunacion.html">Servicio de Vacunación</a></li>
                 <li><a href="./agendarHoras.html">Agendar hora</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
+
+
+    <main class="contenedor_vacunacion">
+
+        <!-- contexto del servicio -->
+        <section class="seccion_contexto_vacunacion">
+            <h2>Servicio de Vacunación Veterinaria</h2>
+            <p>
+                En <strong>Lulu'Vet</strong> creemos que la prevención es la clave para una vida larga y feliz junto a tu mascota. 
+                Contamos con esquemas completos de inmunización para perros y gatos, administrados por profesionales con los más altos estándares de cuidado y un trato cálido.
+            </p>
+        </section>
+
+        <!-- bacuna para perros-->
+        <section class="bloque_especie">
+            <div class="encabezado_especie perro">
+                
+                <i class="fa-solid fa-dog icono_especie"></i>
+                <h3>Vacunas para Caninos (Perros)</h3>
+
+            </div>
+
+            <div class="grilla_vacunas">
+
+                <!-- tarjeta Puppy -->
+                <article class="tarjeta_vacuna">
+                    <div class="cabecera_vacuna">
+
+                        <i class="fa-solid fa-syringe icono_vacuna"></i>
+                        <span class="badge_etapa">Cachorros</span>
+
+                    </div>
+
+                    <h4>Vacuna Puppy</h4>
+
+                    <p class="descripcion_vacuna">Protección inicial crucial en las primeras semanas de vida contra Parvovirus y Distemper canino (Moquillo).</p>
+                    <a href="./agendarHoras.html" class="btn_agendar_vacuna">Agendar Hora</a>
+
+                </article>
+
+                <!-- tarjeta sextuple -->
+                <article class="tarjeta_vacuna">
+                    <div class="cabecera_vacuna">
+
+                        <i class="fa-solid fa-shield-cat icono_vacuna"></i>
+                        <span class="badge_etapa">Anual / Refuerzo</span>
+
+                    </div>
+
+                    <h4>Vacuna Séxtuple</h4>
+
+                    <p class="descripcion_vacuna">Protección multivalente esencial contra Parvovirus, Distemper, Hepatitis infecciosa, Parainfluenza y Leptospirosis.</p>
+                    <a href="./agendarHoras.html" class="btn_agendar_vacuna">Agendar Hora</a>
+
+                </article>
+
+                <!-- tarjeta kc -->
+                <article class="tarjeta_vacuna">
+                    <div class="cabecera_vacuna">
+                        <i class="fa-solid fa-lungs icono_vacuna"></i>
+                        <span class="badge_etapa">Especializada</span>
+                    </div>
+
+                    <h4>Vacuna KC</h4>
+
+                    <p class="descripcion_vacuna">Inmunización preventiva contra la Traqueobronquitis infecciosa canina, conocida popularmente como "Tos de las perreras".</p>
+                    <a href="./agendarHoras.html" class="btn_agendar_vacuna">Agendar Hora</a>
+
+                </article>
+
+                <!-- tarjeta antirabica -->
+                <article class="tarjeta_vacuna">
+                    <div class="cabecera_vacuna">
+
+                        <i class="fa-solid fa-certificate icono_vacuna"></i>
+                        <span class="badge_etapa obligatorio">Obligatoria</span>
+
+                    </div>
+
+                    <h4>Vacuna Antirrábica</h4>
+
+                    <p class="descripcion_vacuna">Protección anual obligatoria por ley contra la Rabia, aplicable tanto en caninos como en felinos a partir de los 2 meses.</p>
+                    <a href="./agendarHoras.html" class="btn_agendar_vacuna">Agendar Hora</a>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- vacuna para gatos -->
+        <section class="bloque_especie">
+            <div class="encabezado_especie gato">
+
+                <i class="fa-solid fa-cat icono_especie"></i>
+                <h3>Vacunas para Felinos (Gatos)</h3>
+
+            </div>
+
+            <div class="grilla_vacunas">
+
+                <!-- tarjeta triple felina -->
+                <article class="tarjeta_vacuna">
+                    <div class="cabecera_vacuna">
+
+                        <i class="fa-solid fa-syringe icono_vacuna"></i>
+                        <span class="badge_etapa">Esencial</span>
+
+                    </div>
+
+                    <h4>Triple Felina</h4>
+
+                    <p class="descripcion_vacuna">Protege a tu gato contra la Panleucopenia felina, el Calicivirus y la Rinotraqueítis (enfermedades respiratorias graves).</p>
+                    <a href="./agendarHoras.html" class="btn_agendar_vacuna">Agendar Hora</a>
+
+                </article>
+
+                <!-- tarjeta leucemia -->
+                <article class="tarjeta_vacuna">
+                    <div class="cabecera_vacuna">
+
+                        <i class="fa-solid fa-heart-pulse icono_vacuna"></i>
+                        <span class="badge_etapa">Preventiva</span>
+
+                    </div>
+
+                    <h4>Vacuna Leucemia Felina</h4>
+
+                    <p class="descripcion_vacuna">Inmunización clave contra el Virus de la Leucemia Felina (FeLV), altamente recomendada previo test de descarte.</p>
+                    <a href="./agendarHoras.html" class="btn_agendar_vacuna">Agendar Hora</a>
+
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--pie de pagina-->
+    <footer>
+
+        <div id="barra_footer">
+            <!--WhatsApp-->
+            <a href="https://wa.me/56942690778" target="_blank" id="item_footer1">
+                <i class="fa-brands fa-whatsapp" id="icono_whatsapp"></i>
+                <span>+56 9 4269 0778</span>
+            </a>
+
+            <div id="separador_footer1"></div>
+
+            <!--Ubicacion-->
+            <div id="item_footer2">
+
+                <i class="fa-solid fa-location-dot" id="icono_ubicacion"></i>
+
+                <div id="contenedor_direccion">
+                    <span>PASAJE LIBERIA 2762</span>
+                    <small>MAIPU</small>
+                </div>
+
+            </div>
+
+            <div id="separador_footer2"></div>
+
+            <!--Instagram-->
+            <a href="https://instagram.com/veterinaria_luluvet" target="_blank" id="item_footer3">
+
+                <i class="fa-brands fa-instagram" id="icono_instagram"></i>
+                <span>veterinaria_luluvet</span>
+
+            </a>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>

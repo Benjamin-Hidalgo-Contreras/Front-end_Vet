@@ -6,7 +6,7 @@ header
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 5%;             
-    padding-right: 0;           /* Elimina el espacio a la derecha */
+    padding-right: 0;       /* Elimina el espacio a la derecha */
 }
 
 #img_logo
@@ -47,4 +47,255 @@ header
 {
     background-color: #007f88;  /* Azul marino en hover */
     color: #ffffff;
+}
+
+/*===============================================================
+  ===============================================================*/
+
+/*edicion de las tablas y contenido del main*/
+
+/*contenedor vacunacion y contexto*/
+.contenedor_vacunacion 
+{
+    max-width: 1140px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.seccion_contexto_vacunacion 
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.seccion_contexto_vacunacion h2 
+{
+    color: #083b88;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.seccion_contexto_vacunacion p 
+{
+    color: #555555;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* bloques de especies*/
+.bloque_especie 
+{
+    margin-bottom: 50px;
+}
+
+.encabezado_especie 
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    color: #083b88;
+}
+
+.encabezado_especie.perro {
+    background-color: #e4e6e7;
+}
+
+.encabezado_especie.gato 
+{
+    background-color: #e4e6e7; 
+}
+
+.encabezado_especie h3 
+{
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.icono_especie 
+{
+    font-size: 1.5rem;
+}
+
+/*grilla(estructura de filas y columnas) responsiva*/
+.grilla_vacunas 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta_vacuna 
+{
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta_vacuna:hover 
+{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cabecera_vacuna 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icono_vacuna 
+{
+    font-size: 1.6rem;
+    color: #00a8b5;
+}
+
+.badge_etapa 
+{
+    background-color: #e0f2fe;
+    color: #083b88;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.badge_etapa.obligatorio 
+{
+    background-color: #ffe8cc;
+    color: #d97706;
+}
+
+.tarjeta_vacuna h4 
+{
+    color: #083b88;
+    font-size: 1.15rem;
+    margin: 0 0 10px 0;
+}
+
+.descripcion_vacuna 
+{
+    color: #6c757d;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/*boton agendamineto*/
+.btn_agendar_vacuna 
+{
+    display: block;
+    text-align: center;
+    background-color: #083b88;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn_agendar_vacuna:hover 
+{
+    background-color: #00a8b5;
+    color: #ffffff;
+}
+
+/*===============================================================
+  ===============================================================*/
+
+/*aca aremos la edicion de estilo del footer*/
+footer 
+{
+    background-color: #f0f4f8;
+    padding: 15px 5%;
+    margin-top: 40px;
+}
+
+#barra_footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/*bloques principales*/
+#item_footer1,
+#item_footer2,
+#item_footer3 
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/*estilo base para los tres iconos*/
+#icono_whatsapp,
+#icono_ubicacion,
+#icono_instagram 
+{
+    font-size: 1.2rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/*colores de cada icono*/
+#icono_whatsapp, 
+#icono_ubicacion 
+{ 
+    background-color: #00b0b9; 
+}
+
+#icono_instagram 
+{ 
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+}
+
+/*direccion*/
+#contenedor_direccion 
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+#contenedor_direccion small
+{
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/*lineas separadoras*/
+#separador_footer1,
+#separador_footer2
+{
+    width: 1px;
+    height: 100px;
+    background-color: #cccccc;
 }
