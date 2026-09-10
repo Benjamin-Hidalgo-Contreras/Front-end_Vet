@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Portal Administrativo LV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <aside class="lateral" id="menu-lateral">
+        <div class="logo">
+          <img id="logovet" src="./img/veterinaria_luluvet.png" alt="logo veterinaria">
+          <p>Lulu'Vet</p>
+        </div>
+
+        <nav>
+            <a href="index.html" class="menu-item activo">
+                Resumen
+            </a>
+
+            <a href="clientes.html" class="menu-item">
+                Clientes
+            </a>
+
+            <a href="pacientes.html" class="menu-item">
+                Pacientes
+            </a>
+
+            <a href="citas.html" class="menu-item">
+                Citas
+            </a>
+
+            <a href="fichas.html" class="menu-item">
+                Fichas clínicas
+            </a>
+
+            <a href="inventario.html" class="menu-item">
+                Inventario
+            </a>
+
+            <a href="reportes.html" class="menu-item">
+                Reportes
+            </a>
+        </nav>
+    </aside>
+
+    <main class="principal">
+        <header class="barra-superior">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Panel de administración</p>
+            </div>
+
+            <div class="user">
+             Administrador
+            </div>
+        </header>
+
+        <section class="contenido">
+            <h2>Resumen general</h2>
+
+            <div class="detalles">
+                <div class="tarjeta">
+                    <div class="icono">🐶</div>
+                    <div>
+                        <h3>128</h3>
+                        <p>Pacientes registrados</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="icono">👥</div>
+                    <div>
+                        <h3>95</h3>
+                        <p>Clientes registrados</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="icono">📅</div>
+                    <div>
+                        <h3>12</h3>
+                        <p>Citas para hoy</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="icono">💰</div>
+                    <div>
+                        <h3>$250.000</h3>
+                        <p>Ingresos del mes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seccion-citas">
+                <div class="citas">
+                    <h2>Citas del día</h2>
+                    <a href="citas.html" class="ver-citas">
+                        Ver todas
+                    </a>
+                </div>
+
+
+                <div class="tabla-citas">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Hora</th>
+                                <th>Paciente</th>
+                                <th>Dueño</th>
+                                <th>Motivo</th>
+                                <th>Veterinario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10:00</td>
+                                <td>🐶 Luna</td>
+                                <td>María González</td>
+                                <td>Control</td>
+                                <td>Dr. Eduardo</td>
+                            </tr>
+                            <tr>
+                                <td>11:30</td>
+                                <td>🐱 Milo</td>
+                                <td>Pedro Soto</td>
+                                <td>Vacunación</td>
+                                <td>Dra. Kiara</td>
+                            </tr>
+                            <tr>
+                                <td>15:00</td>
+                                <td>🐶 Rocky</td>
+                                <td>Carolina Díaz</td>
+                                <td>Consulta</td>
+                                <td>Dr. Eduardo</td>
+                            </tr>
+                            <tr>
+                                <td>16:30</td>
+                                <td>🐱 Tom</td>
+                                <td>Juan Pérez</td>
+                                <td>Control</td>
+                                <td>Dra. María José</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="seccion-alertas">
+                <h2>Avisos</h2>
+                <div class="alerta">
+                    ⚠️ El inventario de vacunas antirrábicas está bajo.
+                </div>
+                <div class="alerta">
+                    📅 Hay 3 citas pendientes de confirmación.
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
